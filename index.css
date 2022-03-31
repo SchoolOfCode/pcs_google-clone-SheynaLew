@@ -73,6 +73,73 @@ header > nav:nth-child(2) > button:hover {
 main {
   width: 100%;
   min-height: calc(100vh - 16vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 30px;
+}
+
+form > div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  max-width: 90%;
+  height: 40px;
+}
+
+form > div > img {
+  height: 25px;
+  margin: 0;
+}
+
+form > div:first-child {
+  border: 1px solid #494a50;
+  border-radius: 50px;
+  background: transparent;
+}
+
+form > div > input {
+  height: 30px;
+  width: 500px;
+  max-width: 85%;
+  background-color: #202124;
+  border: none;
+}
+
+form > div > button {
+  display: flex;
+  height: 38px;
+  width: 130px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+  margin: 0;
+  background-color: #303134;
+  border: 1px solid #303134;
+  color: white;
+  letter-spacing: normal;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+form > div > button:hover {
+  cursor: pointer;
+  border: 1px solid #494a4f;
+}
+
+form > div:nth-child(2) {
+  gap: 20px;
 }
 
 footer {
